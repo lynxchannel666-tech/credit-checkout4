@@ -1,0 +1,231 @@
+body{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 460px auto;
+  grid-template-rows: 100vh;
+
+}
+
+.original{
+background-image: url(pexels-codioful-7130473.jpg);
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+
+}
+.container{
+position: relative;
+top: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.wrapper{
+ background-color: rgb(100, 218, 229);
+width: 400px;
+ height: 340px;
+ border-radius: 1%;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: space-evenly;
+}
+
+
+
+.heading{
+  color: white;
+  text-align: center;
+  font-family: "Elms Sans", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 30px;
+  margin: 0;
+  padding: 10px;
+}
+
+.name{
+
+  font-family: "Elms Sans", sans-serif;
+  font-style: normal;
+   margin: 0px 0px 0px 0px;
+   font-size: 20px;
+   
+
+}
+
+.mastercard >img{
+position: relative;
+right: 50px;
+}
+
+.paypal >img{
+position: relative;
+right: 79px;
+padding-top: 10px;
+}
+
+.visacard >img{
+position: relative;
+right: 65px;
+padding-top: 10px;
+}
+
+.googlepay >img{
+position: relative;
+right: 57px;
+}
+
+.mastercard{
+background-color: white;
+border-radius: 1000px;
+width: 360px;
+margin: 20px;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.paypal{
+  background-color: white;
+  border-radius: 1000px;
+width: 400px;
+margin: 20px;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.visacard{
+  background-color: white;
+  border-radius: 1000px;
+width: 400px;
+margin: 20px;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.googlepay{
+  background-color: white;
+  border-radius: 1000px;
+width: 400px;
+margin: 20px;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#master{
+
+  position: relative;
+  left: 58px;
+
+}
+
+#pay{
+
+  position: relative;
+  left: 88px;
+
+}
+#visa{
+
+  position: relative;
+  left: 72px;
+
+}
+
+#google{
+
+ position: relative;
+ left: 65px;
+
+}
+
+/* Container styling */
+.circular-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+/* Hide default checkbox and build custom circle */
+.circular-checkbox input {
+  appearance: none;
+  -webkit-appearance: none; /* Safari compatibility */
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Makes it a circle */
+  outline: none;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover state */
+.circular-checkbox input:hover {
+  border-color: #007bff;
+  background-color: #f0f7ff;
+}
+
+/* Checked state background change */
+.circular-checkbox input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Custom checkmark inside the input using pseudo-element */
+.circular-checkbox input::before {
+  content: "";
+  width: 12px;
+  height: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg) scale(0);
+  transition: transform 0.2s ease-in-out;
+  margin-top: -2px; /* Slight alignment shift for the checkmark */
+}
+
+/* Show checkmark when checked */
+.circular-checkbox input:checked::before {
+  transform: rotate(-45deg) scale(1);
+}
+button{
+
+margin: 20px;
+height: 50px;
+width: 150px;
+border-radius: 1000px;
+border: none;
+color:rgb(42, 41, 41);
+font-weight: bold;
+font-size: 15px;
+letter-spacing: 1px;
+text-transform: uppercase;
+cursor: pointer;
+}
+ button:hover{
+
+   background-color:rgb(225, 225, 158);
+
+}
